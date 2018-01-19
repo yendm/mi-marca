@@ -110,24 +110,30 @@ h1{
 
 .seccion-1{
 	display: inline-flex;
-    margin: 20px 80px;
+    margin-top: 10px;
+    width: 100%;
     /*background-color: white;*/
 }
 .pista-drone{
-	background-image:url(fondo-carrera.png);
-	background-size: cover;
-	width: 350px;
+	/*background-image:url(fondo-carrera.png);
+	background-size: contain;*/
+	/*width: 350px;
 	height: 280px;
 	margin-right: 80px;
 	border-radius: 15px;
-    border: black solid 1px;
+    border: black solid 1px;*/
+}
+
+.pista-carrera{
+	position: absolute;
+	border-radius: 25px;
 }
 
 .jhimy{
 	position: absolute;
-	margin-top: 125px;
-	width: 150px;
-	height: 150px;
+    margin-top: 60px;
+    width: 590px;
+    height: 300px;
 }
 
 .cabeza{
@@ -153,17 +159,23 @@ h1{
 }
 
 .eslogan{
-	width: 750px;
+	width: auto;
+	max-width: 750px;
 	height: 250px;
 }
 .parrafo-1{
 	font-size: 35px;
 	text-align: center;
 	margin-top: 65px;
+	margin-left:-25px;
+	margin-right: 19px;
 }
 
 .alin{
-	display: inline-block;
+	width: 100%;
+	height: 360px;
+    margin-left: 40px;
+    border-radius: 25px;
 }
 
 .descripcion{
@@ -259,4 +271,57 @@ h3{
 	100%{
 		transform: translate(0);
 	}
+}
+
+
+@media screen and (max-width: 880px){
+
+	.seccion-1{
+		display: inline-block;
+	}
+	.alin{
+		margin-left: 125px;
+		margin-bottom: -55px;
+	}
+	.parrafo-1{
+		margin-left: -125px;
+	}
+	.section-2{
+		margin-top: -100px;
+	}
+	.trabajo{
+		display: inline-block;
+    	background: white;
+    	text-align: center;
+    	width: 600px;
+    	margin-left: 68px;
+	}
+	.caja{
+		width: 300px;
+		margin: 10px;
+	}
+
+}
+
+@media screen and (max-width: 420px){
+
+	body{
+		background: peru;
+		border: red solid 1px;
+	}
+	.pista-drone{
+		width: 350px;
+	}
+	.pista-carrera{
+		width: 350px;
+
+	}
+	.jhymy{
+		margin-top: -175px;
+	}
+	.alin{
+		margin-left: 50px;
+	}
+
+
 }
